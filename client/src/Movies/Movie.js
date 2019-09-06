@@ -5,7 +5,7 @@ const Movie = (props) => {
   const [movie, setMovie] = useState({});
  
   useEffect(() => {
-    const id = movie.find(film => {
+    const id = movie.id.find(film => {
       return film.id === props.match.param.id;
     });
     // change ^^^ that line and grab the id from the URL
